@@ -1,0 +1,33 @@
+<% layout('layouts/boilerplate')%>
+
+    <div class="row">
+        <h1 class="text-center">Details</h1>
+        <div class="col-md-6 offset-md-3">
+            <form action="/create" method="POST">
+                <div class="mb-3">
+                    <label class="form-label" for="username">Github Username</label>
+                    <input class="form-control" type="text" id="username" name="username" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="repo_name">Repository Name</label>
+                    <input class="form-control" type="text" id="repo_name" name="repo_name" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="token">Personal Access Token(Create one if not created)</label>
+                    <input class="form-control" type="text" id="token" name="token" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="description">Description</label>
+                    <input class="form-control" type="text" id="description" name="description" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="visibility">visibility</label>
+                    <input class="form-control" type="text" id="visibility" name="visibility">
+                </div>
+
+                <div class="mb-3">
+                    <button class="btn btn-success">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>

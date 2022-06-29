@@ -1,0 +1,9 @@
+<% layout('layouts/boilerplate')%>
+
+    <h2>List of all Repos</h2>
+    <ul>
+        <% for (let repo of repos) { %>
+            <li><%= repo.name %></li>
+        <% } %>
+    </ul>
+

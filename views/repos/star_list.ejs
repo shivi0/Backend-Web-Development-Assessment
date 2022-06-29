@@ -1,0 +1,10 @@
+<% layout('layouts/boilerplate')%>
+
+    <h2>List of all Repos with >5 stars and >5 forks</h2>
+    <ul>
+        <% for (let repo of repos) { %>
+            <% if(repo.stargazers_count>5 && repo.forks_count>5){ %>
+                <li><%= repo.name  %> </li>
+                <% } %>  
+        <% } %>
+    </ul>

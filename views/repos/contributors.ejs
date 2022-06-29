@@ -1,0 +1,15 @@
+<% layout('layouts/boilerplate')%>
+
+<h2>Contibutors</h2>
+<ul>
+    <% for (let contributor of contributors) { %>
+        <li><%= contributor.login %></li>
+    <% } %>
+</ul>
+
+<h2>Stargazers</h2>
+<ul>
+    <% for (let stargazer of stargazers) { %>
+        <li><%= stargazer.login %></li>
+    <% } %>
+</ul>

@@ -1,0 +1,14 @@
+<% layout('layouts/boilerplate')%>
+
+    <h2>List of all topics related to <%=repo_name %></h2>
+    
+    <% if(topics.length==0){ %>
+        <h3>There are no topics for this Repository</h3>
+    
+        <% } else{ %>
+            <ul>
+                <% for (let topic of topics) { %>
+                    <li><%= topic %></li>
+                <% } %>
+            </ul>
+            <% } %>  
